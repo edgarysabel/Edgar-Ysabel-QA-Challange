@@ -1,0 +1,14 @@
+{
+	"url": "http://automationpractice.com/index.php",
+	"firstName": "GBH",
+	"lastName": "Test",
+	"password": "password",
+	"dayOfBirth": "2",
+	"monthOfBirth": "8",
+	"yearOfBirth": "1991",
+	"address": "Calle Roberto Pastoriza",
+	"state": "13",
+	"mobilePhone": "8290001234",
+	"city": "Miami",
+	"zip": "33172"
+}
