@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-import MyAccount from "../support/pageObjects/myAccount";
-import Authentication from "../support/pageObjects/authentication";
+import MyAccount from "../../support/pageObjects/myAccount";
+import Authentication from "../../support/pageObjects/authentication";
 
 const myAccount = new MyAccount();
 const authentication = new Authentication();

@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
-import Header from "../support/pageObjects/Header";
-import SearchResults from "../support/pageObjects/searchResults";
-import ShoppingCart from "../support/pageObjects/shoppingCart";
+import Header from "../../support/pageObjects/Header";
+import SearchResults from "../../support/pageObjects/searchResults";
+import ShoppingCart from "../../support/pageObjects/shoppingCart";
 
 const header = new Header();
 const searchResults = new SearchResults();

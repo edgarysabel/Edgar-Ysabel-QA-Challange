@@ -1,7 +1,7 @@
 /// <reference types="cypress" />
-import Homepage from "../support/pageObjects/homepage";
-import Authentication from "../support/pageObjects/authentication";
-import SignUp from "../support/pageObjects/signUp";
+import Homepage from "../../support/pageObjects/homepage";
+import Authentication from "../../support/pageObjects/authentication";
+import SignUp from "../../support/pageObjects/signUp";
 
 const homepage = new Homepage();
 const authentication = new Authentication();

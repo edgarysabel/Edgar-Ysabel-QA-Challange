@@ -1,22 +1,23 @@
 /// <reference types="cypress" />
-import Header from "../support/pageObjects/Header";
-import SearchResults from "../support/pageObjects/searchResults";
-import ShoppingCart from "../support/pageObjects/shoppingCart";
+import Header from "../../support/pageObjects/Header";
+import SearchResults from "../../support/pageObjects/searchResults";
 
 const header = new Header();
 const searchResults = new SearchResults();
-const shoppingCart = new ShoppingCart();
 
-context("Delete Item from Cart", () => {
-	before(() => {
-		cy.fixture("deleteItemFromCartData").then(function (data) {
+context("Add Item to Cart", () => {
+	beforeEach(function () {
+		cy.fixture("addToCartData").then(function (data) {
 			this.data = data;
 		});
+	});
+
+	before(() => {
 		cy.login();
 		cy.url().should("include", "my-account");
 	});
 
-	it("Delete Item", function () {
+	it("Add Item", function () {
 		header.typeInSearchBar(this.data.item);
 		header.clickSearchBtn();
 		searchResults.getProduct(this.data.item).each(($el) => {
@@ -27,8 +28,5 @@ context("Delete Item from Cart", () => {
 			}
 		});
 		searchResults.succesfullyAdded().should("include.text", "successfully");
-		searchResults.clickProceedToCheckoutBtn();
-		shoppingCart.clickDeleteBtn();
-		shoppingCart.emptyShoppingCart().should("include.text", "empty");
 	});
 });

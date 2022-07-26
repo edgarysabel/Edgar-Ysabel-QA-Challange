@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import MyAccount from "../support/pageObjects/myAccount";
+import MyAccount from "../../support/pageObjects/myAccount";
 
 const myAccount = new MyAccount();
 

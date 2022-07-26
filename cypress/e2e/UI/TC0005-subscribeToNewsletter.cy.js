@@ -1,6 +1,6 @@
 /// <reference types="cypress" />
-import Footer from "../support/pageObjects/Footer";
-import Homepage from "../support/pageObjects/homepage";
+import Footer from "../../support/pageObjects/Footer";
+import Homepage from "../../support/pageObjects/homepage";
 
 const homepage = new Homepage();
 const footer = new Footer();
