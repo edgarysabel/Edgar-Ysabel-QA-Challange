@@ -14,6 +14,14 @@ class Header {
 	clickSearchBtn() {
 		cy.get("#searchbox > .btn").click();
 	}
+
+	clickMyAccount() {
+		cy.get(".account > span").click();
+	}
+
+	clickContactUs() {
+		cy.get("#contact-link > a").click();
+	}
 }
 
 export default Header;

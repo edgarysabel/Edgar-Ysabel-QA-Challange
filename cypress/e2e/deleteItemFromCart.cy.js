@@ -8,13 +8,10 @@ const searchResults = new SearchResults();
 const shoppingCart = new ShoppingCart();
 
 context("Delete Item from Cart", () => {
-	beforeEach(function () {
+	before(() => {
 		cy.fixture("deleteItemFromCartData").then(function (data) {
 			this.data = data;
 		});
-	});
-
-	before(() => {
 		cy.login();
 		cy.url().should("include", "my-account");
 	});

@@ -7,13 +7,10 @@ const searchResults = new SearchResults();
 let searchAssertion = false;
 
 context("Search Item", () => {
-	beforeEach(function () {
+	before(() => {
 		cy.fixture("searchItemData").then(function (data) {
 			this.data = data;
 		});
-	});
-
-	before(() => {
 		cy.login();
 		cy.url().should("include", "my-account");
 	});
