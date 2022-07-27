@@ -3,6 +3,7 @@
     "cypress": "^10.3.0"
   },
   "devDependencies": {
-    "@shelex/cypress-allure-plugin": "^2.28.0"
+    "@shelex/cypress-allure-plugin": "^2.28.0",
+    "md5": "^2.3.0"
   }
 }
