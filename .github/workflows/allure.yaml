@@ -40,7 +40,7 @@ jobs:
 
       - name: Generate Allure report
         if: always()
-        run: npm run allure:report-generate
+        run: npm run allure:report
 
       - name: Commit report results
         if: always()
