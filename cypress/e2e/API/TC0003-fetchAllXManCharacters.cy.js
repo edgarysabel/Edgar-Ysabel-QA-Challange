@@ -3,7 +3,7 @@ import generateApiHash from "../../support/api";
 
 const api = new generateApiHash();
 
-context("Fetch all Spiderman Comics", () => {
+context("Fetch all X-Man Characters", () => {
 	beforeEach(() => {
 		cy.fixture("marvelApiData").then(function (data) {
 			this.data = data;
