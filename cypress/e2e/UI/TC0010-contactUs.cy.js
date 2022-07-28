@@ -5,7 +5,7 @@ import ContactUs from "../../support/pageObjects/contactUs";
 const header = new Header();
 const contactUs = new ContactUs();
 
-context("Add Item to Cart", () => {
+context("Contact Us", () => {
 	before(() => {
 		cy.fixture("selectOrderReferenceData").then(function (data) {
 			this.data = data;

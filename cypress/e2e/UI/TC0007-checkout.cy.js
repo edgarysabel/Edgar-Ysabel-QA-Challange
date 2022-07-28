@@ -8,7 +8,7 @@ const searchResults = new SearchResults();
 const shoppingCart = new ShoppingCart();
 let assertion = false;
 
-context("Delete Item from Cart", () => {
+context("Complete Checkout Process", () => {
 	beforeEach(function () {
 		cy.fixture("checkoutData").then(function (data) {
 			this.data = data;
