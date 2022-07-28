@@ -1,5 +1,5 @@
 /// <reference types="cypress" />
-import Header from "../../support/pageObjects/Header";
+import Header from "../../support/pageObjects/header";
 import SearchResults from "../../support/pageObjects/searchResults";
 
 const header = new Header();
