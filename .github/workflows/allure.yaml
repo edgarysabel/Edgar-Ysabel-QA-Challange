@@ -2,7 +2,14 @@ name: allure-report
 "on":
   push:
     branches:
-      - master
+      - main
+
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: "Branch to use"
+        required: true
+        default: main
 jobs:
   generate-report:
     runs-on: ubuntu-16.04
