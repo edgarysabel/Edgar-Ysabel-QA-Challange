@@ -3,6 +3,6 @@
 	"PRIVATE_KEY": "775bdcb1694554d77dc56606b9852b698832993f",
 	"ENDPOINT": "https://gateway.marvel.com",
 	"API_LIMIT": "100",
-	"API_COMIC": "X-Man",
-	"CHARACTER": "Spider-Man"
+	"COMIC": "X-Man",
+	"CHARACTER": "spider-man"
 }
