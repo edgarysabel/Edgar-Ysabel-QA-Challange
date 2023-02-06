@@ -1,4 +1,4 @@
-name: allure-report
+name: Run QA Integration Tests
 "on":
   push:
     branches:
